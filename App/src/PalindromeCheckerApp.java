@@ -3,15 +3,12 @@ public class PalindromeCheckerApp {
     public static void main(String[] args) {
 
         String input = "madam";
-
-        // Convert string to character array
         char[] arr = input.toCharArray();
 
         int left = 0;
         int right = arr.length - 1;
         boolean isPalindrome = true;
 
-        // Two-pointer comparison
         while (left < right) {
             if (arr[left] != arr[right]) {
                 isPalindrome = false;
@@ -21,7 +18,6 @@ public class PalindromeCheckerApp {
             right--;
         }
 
-        // Result
         if (isPalindrome) {
             System.out.println(input + " is a Palindrome.");
         } else {
