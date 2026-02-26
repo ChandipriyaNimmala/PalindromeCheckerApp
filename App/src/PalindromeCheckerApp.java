@@ -1,5 +1,7 @@
 public class PalindromeCheckerApp {
-    public static void main (){
+
+    public static void main(String[] args) {
+
         String input = "madam";
 
         // Convert string to character array
