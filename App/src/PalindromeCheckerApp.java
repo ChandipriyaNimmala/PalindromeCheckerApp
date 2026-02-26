@@ -1,20 +1,22 @@
 public class PalindromeCheckerApp {
-    public static void main () {
-        String input= "madam";
+    public static void main(String[] args) {
+
+        String input = "madam";
         boolean isPalindrome = true;
-        int n = input.length() - 1;
-        for (int i = 0; i < word.length() / 2; i++) {
+
+        // Compare characters from start and end
+        for (int i = 0; i < input.length() / 2; i++) {
             if (input.charAt(i) != input.charAt(input.length() - 1 - i)) {
                 isPalindrome = false;
                 break;
             }
         }
-        if(isPalindrome)
-        {
-            System.out.println(input + " Is a Palindrome. ");
-        }
-        else {
-            System.out.println(input + " Is not a palindrome ");
+
+        // Output result
+        if (isPalindrome) {
+            System.out.println(input + " is a Palindrome.");
+        } else {
+            System.out.println(input + " is NOT a Palindrome.");
         }
     }
 }
